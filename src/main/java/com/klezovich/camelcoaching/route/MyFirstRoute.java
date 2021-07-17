@@ -1,10 +1,12 @@
 package com.klezovich.camelcoaching.route;
 
+import org.apache.camel.Exchange;
+import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class MyFirstRoute extends RouteBuilder {
 
     private final TimeProvider provider;
@@ -23,6 +25,13 @@ public class MyFirstRoute extends RouteBuilder {
         .log("Initial message body ${body}")
         .bean(provider, "getTime")
         .bean(logger)
+        .process(new Processor() {
+            @Override
+            public void process(Exchange exchange) throws Exception {
+                log.info("In processor");
+                log.info("{}", exchange.getIn().getBody());
+            }
+        })
         .to("log:first-timer");
     }
 }
