@@ -10,5 +10,4 @@ public class DeciderBean {
     public boolean bodyContainsUsd(CurrencyExchangeController.CurrencyExchange exchange) {
         return exchange.from.contains("USD") || exchange.to.contains("USD");
     }
-
 }
