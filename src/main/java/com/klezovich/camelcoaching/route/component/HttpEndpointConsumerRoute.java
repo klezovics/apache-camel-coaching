@@ -3,7 +3,7 @@ package com.klezovich.camelcoaching.route.component;
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class HttpEndpointConsumerRoute extends RouteBuilder {
 
     @Override
