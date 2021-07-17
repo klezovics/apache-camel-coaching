@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 //Requires ActiveMQ docker container to be running
-@Component
+//@Component
 public class ActiveMqConsumerRoute extends RouteBuilder {
 
     @Autowired
