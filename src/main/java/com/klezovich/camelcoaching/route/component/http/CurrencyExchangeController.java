@@ -1,4 +1,4 @@
-package com.klezovich.camelcoaching.http;
+package com.klezovich.camelcoaching.route.component.http;
 
 import lombok.*;
 import org.springframework.web.bind.annotation.GetMapping;

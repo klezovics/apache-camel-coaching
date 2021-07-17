@@ -1,19 +1,17 @@
-package com.klezovich.camelcoaching.http;
+package com.klezovich.camelcoaching.route.component.http;
 
-import com.klezovich.camelcoaching.route.component.activemq.UserBean;
 import com.klezovich.camelcoaching.route.component.activemq.UserBeanProcessor;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.dataformat.JsonLibrary;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
 //Requires ActiveMQ docker container to be running
-@Component
+//@Component
 public class RestApiConsumerRoute extends RouteBuilder {
 
     @Autowired

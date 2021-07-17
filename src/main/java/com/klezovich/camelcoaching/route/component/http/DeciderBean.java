@@ -1,4 +1,4 @@
-package com.klezovich.camelcoaching.http;
+package com.klezovich.camelcoaching.route.component.http;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
