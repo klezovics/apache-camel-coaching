@@ -11,8 +11,12 @@ public class ActiveMqProducerRoute extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-        from("timer:my-timer")
-        .transform().constant("My message from ActiveMq")
+//        from("timer:my-timer")
+//        .transform().constant("My message from ActiveMq")
+//        .to("activemq:my-activemq-queue");
+
+        from("file:files/json?noop=true")
+        .log("${body}")
         .to("activemq:my-activemq-queue");
     }
 }
