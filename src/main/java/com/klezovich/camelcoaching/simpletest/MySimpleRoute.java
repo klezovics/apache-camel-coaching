@@ -1,4 +1,4 @@
-package com.klezovich.camelcoaching.test;
+package com.klezovich.camelcoaching.simpletest;
 
 import org.apache.camel.builder.RouteBuilder;
 
