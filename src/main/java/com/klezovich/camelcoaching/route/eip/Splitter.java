@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Random;
 
-@Component
+//@Component
 public class Splitter extends RouteBuilder {
     @Override
     public void configure() throws Exception {
